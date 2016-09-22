@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JS Learning</title>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    </head>
+
+    <body>
+        <p id="number">how many fingers am I holding up?</p>
+        <input id="answer" value = "number"/>
+        <button id="fingers">Click to know</button>
+      <script type="text/javascript">
+        document.getElementById('fingers').onclick = function () {
+          var x = Math.floor(6*Math.random());
+
+          if (x == document.getElementById('answer').value) {
+            alert("Right, I was holding " + x);
+          } else {
+            alert("No, I was holding " + x);
+          }
+        }
+      </script>
+    </body>
+</html>
+

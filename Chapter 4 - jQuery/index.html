@@ -1,0 +1,113 @@
+
+<!doctype html>
+<html>
+    <head>
+        <title>jQuery Learning</title>
+
+        <meta charset="utf-8" />
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <script type="text/javascript" src="jquery-3.1.0.min.js"></script>
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.0/jquery-ui.min.js"></script>
+        <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.0/themes/smoothness/jquery-ui.css">
+        <style type="text/css">
+          body{
+            padding: 0;
+            margin: 0;
+            font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+          }
+          #menubar {
+            width: 100%;
+            height: 40px;
+            background-color: #e0e0e0;
+            border-bottom: 1px solid grey;
+
+          }
+          #logo {
+            padding: 10px 0px 10px 20px;
+            font-weight: bold;
+            float: left;
+          }
+          #button {
+            float: right;
+            padding: 10px 20px 10px 0px;
+          }
+          #run {
+            background-color: white;
+          }
+          #toggles {
+            float:right;
+            position:relative;
+            left:-33%;
+            top: 12px;
+            list-style: none;
+            border: 1px solid grey;
+            border-radius: 5px;
+          }
+          #toggles li {
+            float: left;
+            border-right: 1px solid grey;
+            padding: 4px;
+            font-size: 13px;
+          }
+          .clear {
+            clear:both;
+          }
+          .container{
+            height: 100%;
+            width:50%;
+            position: relative;
+          }
+          .container textarea{
+            height: 100%;
+            width:100%;
+            border: none;
+            border-right: 1px solid grey;
+            font-family: monotype;
+            font-size: 90%;
+            padding: 5px;
+
+          }
+          .labels {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            
+          }
+
+        </style>
+    </head>
+
+    <body>
+      <div id="wrapper">
+
+        <div id = "menubar">
+
+          <div id="logo">
+            CodePlayer
+          </div>
+          <div id="button">
+            <button id="run">Run</button>
+          </div>
+          <div id="toggles">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JS</li>
+            <li style="border-right:none;">Result</li>
+
+          </div>
+       </div>
+       <div id="clear"></div>
+       <div class="container" id="htmlcon">
+        <div class="labels">HTML</div>
+        <textarea>code example</textarea></div>
+
+      <script>
+        var windowHeight=$(window).height();
+        var menuBarHeight=$("#menubar").height();
+        var containerHeight = windowHeight - menuBarHeight;
+        $(".container").height(containerHeight + "px");
+      </script>
+    </body>
+</html>
+

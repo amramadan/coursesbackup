@@ -1,0 +1,83 @@
+
+<!doctype html>
+<html>
+    <head>
+        <title>CSS Learning</title>
+
+        <meta charset="utf-8" />
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <style type="text/css">
+          .large{
+            font-size: 300%;
+          }
+          #green{
+            color: green;
+            position: relative;
+            z-index: 2;
+          }
+          .underline{
+            text-decoration: underline;
+          }
+          .bold{
+            font-weight: bold;
+          }
+          .yellowbox{
+            background-color: yellow;
+            width: 300px;
+            height: 200px;
+            margin: 50px 100px 230px 10px;
+             
+          }
+          .redbox{
+            background-color: red;
+            width: 400px;
+            height: 50px;
+          }
+        </style>   
+    </head>
+
+    <body>
+        <div class="yellowbox">
+            <p class="large">This is me learning CSS</p>
+        </div>
+        <p id="green" class="large">See the diffrence with classes and IDs</p>
+        <p>The third <span class="underline large bold">word</span> in this paragraph is underlined</p>
+        <div class="redbox">
+            <p>div shit</p>
+        </div>
+    </body>
+</html>
+
+<!-- 
+part 1:
+  For in sentence use -style="color:blue;"- con is that it complicates them it.
+  it is seperated to body and div and so on so it affects all related ares directly EX: p{color:red; } for paragraph with color red.
+
+part 2:
+  use ID only once so that every element that has an ID has a unique ID that isn't mixed up and # is used to refer for ID, while classes are used to generalise as much content as I want and a '.'' is used to refer to a class/ use spaces to seperate multiple refrences to multiple classes in an individual tag
+
+Part 3:
+  Creating a div and making a stylr will affect all of the following div sections, in 
+  case one would like not to affect all of the divs use a class.
+ Note: use HTML color code for specific colors
+
+Part 4:
+  Use float left and right for aligning left and right, and everything will fill the rest of the gaps "float in between". And when multiple items are floated to the same place for example left they will be arranged by priority of command and will automatically amend the look as browser is resized. So, we use "clear:both" in a class, and affect a paragraph or div under a to fill the middle section with clear and must be directly following the floated section.
+Part 5: 
+  Use z-index to create layers, and the item with a greater value has a higher priority as it is moved along the z axis.
+  If we use relative in positioning then the specified item is moved according to its initial position. However, absolute makes its present is ignored however it is fixed on this position on the page. On the other hand if we use fixed it will be exactly the same but it will stay absolute relative to the browser, so it can be used for nav bars. and static is the default.
+
+Part 6:
+  Creating a margin, is like creating a frame around that certain element. One can create muliple frames with different thicknesses. The margin command moves clockwise starting from the top. One can create specific margins, ex: margin-top:"";
+
+Part 7:
+  Padding must be initiated as zero in p tag, so that we can edit it in a class. Adding padding changes the dimensions of the elements.
+
+Part 8:
+  Borders have 3 elemts to be created, so "border: thickness color type". se "Border-style: top righ bottom left" to edit each border seperatly by menting the type. Use border-width/color in the same way. border-raduis gives soft corners. 
+
+Part 9:
+  use attributes with HTML <a href="www.google.com" taregt=_blank>Google</a>
+  To change the visited links to have a different color then create a:visited{color:green;}. a:hover {font-size:50px;}.
+  -->
